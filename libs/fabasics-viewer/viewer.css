@@ -1,0 +1,140 @@
+
+#viewer{
+	margin-top: 40px;
+	position: relative;
+	height: 85vh;
+}
+
+
+#viewer img{
+	position: absolute;
+	padding: 20px;
+	margin: 20px 0px;
+	max-height: 90%;
+	max-width: 99%;
+	opacity:0;
+	transition: all 0.5s ease;
+	}
+
+#viewer .showImage{
+	position: absolute;
+	opacity:1;
+	transition: all 0.5s ease;
+}
+
+
+#title{
+	position: absolute;
+	max-width: 100%;
+	color:whitesmoke;
+	background-color: #a1a1a177;
+	bottom:0px;
+	font-size: 1em;
+	padding :0px 10px;
+}
+  
+
+  /* PIC SCROLLER NAVIGATION----------------------------------*/
+  
+  .buttonnav {
+    background-color: #3c3c3c;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    z-index: 30;
+    line-height: 0px;
+    text-align: center;
+    box-shadow: 2px 2px 5px #282828;
+    outline:none !important;
+    border-radius: 50%;
+    transform: scale(1.2);
+    font-weight: bold;
+  }
+  
+  .buttonnav:hover {
+    background-color: #383838;
+
+  }
+
+  .buttonnav:active {
+    background-color: #2b2b2b;
+  }
+  
+
+  
+  #prev {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+  }
+  
+  #next {
+    position: absolute;
+    bottom: 50px;
+    right: 10px;
+  }
+
+
+  @media (orientation: portrait) {
+
+
+    #prev {
+        position: absolute;
+        bottom: 50%;
+        left: 10%;
+      }
+      
+      #next {
+        position: absolute;
+        bottom: 50%;
+        right: 10%;
+      }
+  }
+
+
+  @media (min-width: 576px) {
+    #prev {
+        position: absolute;
+        bottom: 50%;
+        left: 10%;
+      }
+      
+      #next {
+        position: absolute;
+        bottom: 50%;
+        right: 10%;
+      }
+  }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #prev {
+        position: absolute;
+        bottom: 50%;
+        left: 10%;
+      }
+      
+      #next {
+        position: absolute;
+        bottom: 50%;
+        right: 10%;
+      }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    
+}
+
+/* X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    
+}
+
+/* XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+    
+}
